@@ -2,19 +2,22 @@
   "name": "DigNas_back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "controller.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node route.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DigNas-Piracicaba/DigNas-front.git"
+    "url": "git+https://github.com/DigNas-Piracicaba/DigNas-back.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DigNas-Piracicaba/DigNas-front/issues"
+    "url": "https://github.com/DigNas-Piracicaba/DigNas-back/issues"
   },
-  "homepage": "https://github.com/DigNas-Piracicaba/DigNas-front#readme"
-}
+  "homepage": "https://github.com/DigNas-Piracicaba/DigNas-back#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }}
