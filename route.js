@@ -1,9 +1,10 @@
+const http = require("http");
+const express = require("express");
+const app = express();
 
-var express = require('express');
-var app = express();
+http.createServer(app).listen(3000, () => console.log("Servidor rodando local na porta 3000"));
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', function(req, res) {
-  res.send('hello world');
+app.get("/home", function(req, res) {
+    res.send("Olá manas");
 });
 
