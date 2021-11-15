@@ -6,10 +6,9 @@ class CadastroController {
         this.service = new CadastroService();
     }
 
-    async novoCadastro (req, res) {
-        const user = req.body;
-        //chama a função da service
-        res.send("Olá, " + user.nome + " seu cadastro foi efetuado com sucesso!")
+    novoCadastro (user) {
+        this.service.novoCadastro(user);
+        console.log("Voltou da service");
     }
 
 }
