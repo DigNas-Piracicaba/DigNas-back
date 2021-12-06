@@ -2,10 +2,10 @@
   "name": "DigNas_back",
   "version": "1.0.0",
   "description": "",
-  "main": "controller.js",
+  "main": "Cadastro/route.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node route.js"
+    "start": "nodemon route.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   },
   "homepage": "https://github.com/DigNas-Piracicaba/DigNas-back#readme",
   "dependencies": {
-    "express": "^4.17.1"
-  }}
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14"
+  }
+}
